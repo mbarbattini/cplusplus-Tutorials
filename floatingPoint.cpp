@@ -11,7 +11,7 @@ int main()
   long double c;
 
   cout << std::fixed << a << std::endl;
-  cout << FLT_DIG << std::endl;
+  cout << FLT_DIG << endl;
   cout << DBL_DIG << endl;
   cout << LDBL_DIG << endl;
 }
