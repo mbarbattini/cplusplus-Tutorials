@@ -15,15 +15,24 @@ using std::string;
 // }
 
 void print_array(int array[], int size) {
-    for(int i = 0; i < size; i++)
-    {
+    for(int i = 0; i < size; i++) {
         cout << array[i] << "\t"; 
     }
     
 }
 
 int main() {
-    int guesses[] = {12,43,23,43,23};
-    int size = sizeof(guesses) / sizeof(int);    
-    print_array(guesses , size);
+    const int SIZE = 10;
+    int count = 0;
+    int guesses[SIZE];
+
+    for (int i = 0; i < SIZE; i++) {
+        if(cin >> guesses[i]) {
+            count++;
+        } else {
+            break;
+        }
+    }
+
+    print_array(guesses, count);
 }
