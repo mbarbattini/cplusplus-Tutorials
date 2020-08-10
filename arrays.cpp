@@ -35,4 +35,5 @@ int main() {
     }
 
     print_array(guesses, count);
+    cin.clear();
 }
